@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="80" src="https://gitee.com/szj2ys/Pictures/raw/master/logo/buffalo.svg"/>
+    <img width="80" src="https://gitee.com/szj2ys/Pictures/raw/master/logo/buffalo.png"/>
 </p>
 
 <h3 align="center">
