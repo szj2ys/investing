@@ -1,0 +1,13 @@
+tushare
+mysqling==0.3.1
+doger
+pigeomail
+ckitoolz
+environs
+tqdm
+fire
+sqlitedict
+tenacity
+deco
+pyecharts==1.9.0
+chinesecalendar
