@@ -10,67 +10,53 @@
   <link rel="icon" href="_media/icon.svg">
 </head>
 <body>
-  <style type="text/css">
-    .markdown-section {
-        max-width: 95%;
-    }
-  </style>
-  <div id="app">Loading ...</div>
+  <div id="app"></div>
   <script>
     window.$docsify = {
       coverpage: false,
-      autoHeader: true,
       loadSidebar: true,
       loadNavbar: true,
-      subMaxLevel: 4,
+      subMaxLevel: 3,
       auto2top: true,
-      mergeNavbar: true,
+      // executeScript: true,
       homepage: 'README.md',
       ext: '.md',
       search: {
         placeholder: {
-          '/': '搜索 (Search)',
+          '/': 'Type to search',
           '/zh-cn/': '搜索 (Search)',
           '/en-us/': 'Type to search'
         },
         noData: {
-          '/': '找不到结果 (Not Found)',
+          '/': 'No Results',
           '/zh-cn/': '找不到结果 (Not Found)',
           '/en-us/': 'No Results'
         }
       },
-      plugins: [
-        function (hook) {
-          var footer = [
-            '<hr/>',
-            '<footer>',
-            '<span><a href="https://github.com/szj2ys/critical_investing.git">critical_investing</a> &copy;2021 - 2021.</span>',
-            '<span>Powered By <a href="https://github.com/QingWei-Li/docsify" target="_blank">docsify</a>.</span>',
-            '</footer>'
-          ].join('');
-
-          hook.afterEach(function (html) {
-            return html + footer
-          })
-        }
-      ],
       copyCode: {
         buttonText: {
-          '/': '点击复制 (Click to Copy)'
+          '/': 'Click to Copy'
         },
         errorText: {
-          '/': '错误 (Error)'
+          '/': 'Error'
         },
         successText: {
-          '/': '复制 (Copy)'
+          '/': 'Copyed'
         }
       }
     }
   </script>
-  <script src="//pyecharts.org/static/docsify-copy-code.min.js"></script>
-  <script src="//pyecharts.org/static/search.js"></script>
-  <script src="//pyecharts.org/static/docsify.min.js"></script>
-  <script src="//pyecharts.org/static/prism-python.min.js"></script>
-  <script src="//pyecharts.org/static/zoom-image.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-html.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+<!--  <script src="//pyecharts.org/static/search.js"></script>-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
